@@ -31,4 +31,11 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    // Twilio sms service information
+    'twilio' => [
+        'secret' => env('TWILIO_SID'),
+        'auth_token' => env('TWILIO_AUTH_TOKEN'),
+        'number' => env('TWILIO_NUMBER')
+    ] 
+
 ];
